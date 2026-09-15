@@ -13,3 +13,4 @@ data/*.csv
 .vscode/
 logs/
 .env
+data/*.csv
