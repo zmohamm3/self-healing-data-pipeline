@@ -11,3 +11,5 @@ data/*.csv
 .DS_Store
 .idea/
 .vscode/
+logs/
+.env
