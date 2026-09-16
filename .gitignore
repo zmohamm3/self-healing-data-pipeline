@@ -13,4 +13,8 @@ data/*.csv
 .vscode/
 logs/
 .env
+__pycache__/
+*.pyc
+.pytest_cache/
+dashboard/*.pbix
 data/*.csv

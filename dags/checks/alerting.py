@@ -5,8 +5,7 @@ import urllib.error
 
 # Retrieve from environment variable, fallback to default URL if not set
 SLACK_WEBHOOK_URL = os.getenv(
-    "SLACK_WEBHOOK_URL",
-    "https://hooks.slack.com/services/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"
+    "SLACK_WEBHOOK_URL",""
 )
 
 def send_slack_alert(batch_date, check_name, severity, message, action_taken):
