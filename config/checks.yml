@@ -1,0 +1,26 @@
+required_columns:
+  order_id: TEXT
+  customer_id: TEXT
+  order_date: TEXT
+  product_category: TEXT
+  quantity: TEXT
+  unit_price: TEXT
+  total_amount: TEXT
+  region: TEXT
+
+volume:
+  rolling_window_days: 30
+  std_dev_threshold: 3.0
+  min_history_days: 7
+
+nulls:
+  order_id: 0.0
+  customer_id: 0.05
+  total_amount: 0.01
+
+outliers:
+  method: iqr
+  iqr_multiplier: 3.0
+  columns:
+    - unit_price
+    - total_amount
